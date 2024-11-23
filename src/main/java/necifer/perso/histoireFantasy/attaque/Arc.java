@@ -12,9 +12,7 @@ public class Arc extends Arme {
     @Override
     public int utiliser() {
         nbDeFlechesRestantes--;
-        if (nbDeFlechesRestantes <= 0) {
-            operationnel = false;
-        }
+        operationnel = nbDeFlechesRestantes > 0;
         return super.utiliser();
     }
 }
