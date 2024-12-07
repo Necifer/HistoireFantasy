@@ -8,6 +8,7 @@ public class Griffe extends Tranchant {
 
     @Override
     public int utiliser() {
+
         return getPointDeDegat();
     }
 }

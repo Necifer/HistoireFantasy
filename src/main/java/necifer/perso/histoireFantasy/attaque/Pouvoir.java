@@ -3,16 +3,16 @@ package necifer.perso.histoireFantasy.attaque;
 public abstract class Pouvoir extends ForceDeCombat {
 
     private int nbUtilisationPouvoir;
-    private final int nbUtilisationPouvoirInititial;
+    private final int nbUtilisationPouvoirInitial;
 
     public Pouvoir(int pointDeDegat, String nom, int nbUtilisationPouvoir) {
         super(pointDeDegat, nom);
-        this.nbUtilisationPouvoirInititial = nbUtilisationPouvoir;
+        this.nbUtilisationPouvoirInitial = nbUtilisationPouvoir;
         regenererPouvoir();
     }
 
     public void regenererPouvoir() {
-        nbUtilisationPouvoir = nbUtilisationPouvoirInititial;
+        nbUtilisationPouvoir = nbUtilisationPouvoirInitial;
         operationnel = true;
     }
 
